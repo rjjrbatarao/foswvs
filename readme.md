@@ -15,6 +15,7 @@ STEP 1:
  - connect to `ssh pi@raspberrypi` using the password `raspberry` - don't forget to change the default password of your device.
  
 STEP 2:
+ - `sudo apt-get update --allow-releaseinfo-change`
  - `sudo apt install -y nginx php-fpm php-sqlite3 isc-dhcp-server bind9 git`
  - `visudo` then add `www-data ALL=NOPASSWD: /usr/sbin/iptables`
  - `sudo usermod -aG gpio www-data`
